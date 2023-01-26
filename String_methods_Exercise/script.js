@@ -19,3 +19,6 @@ console.log(url + frage)
 
 // 6- Schreiben Sie Wohnung mit dem Methods substring?
 console.log(frage.substring(29,37))
+
+//7- Inklusive die Frage Cerasela?
+console.log(frage.includes("Cerasela"))
