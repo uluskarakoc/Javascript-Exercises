@@ -1,5 +1,6 @@
 // 1-Erstellen sie eine array die Elemente "Apfel,Birne,Banana,Erdbeere" haben?
 const obst = ["Apfel", "Birne", "Banana", "Erdbeere"];
+const gemüse =["Lauchzwiebeln","Gurken","Bohnen","Kürbis"]
 
 // 2.Wie viele Elemente hat das Array?
 console.log(obst.length);
@@ -56,9 +57,13 @@ const schüler3Alt = jetzt - schüler3[1];
 console.log(schüler3Alt);
 
 // 8- Fügen Sie am anfang das Element Ananas innerhalb Array?
-const ananas =obst.unshift("ananas");
+const ananas =obst.unshift("Ananas");
 console.log(`Hier wird ${obst} eingefügt` )
 
 // 9-Zeigen Sie das Element das in 3. index ist?
 const index3 =obst.at(3);
 console.log(`Dirtte Element ist ${index3}`);
+
+// 10-Führen Sie Obst und Gemüse zusammen?
+const zusammenFühren = obst.concat(gemüse);
+console.log(`Hier haben obst und gemüse zusammengeführt => ${zusammenFühren} <=`)
