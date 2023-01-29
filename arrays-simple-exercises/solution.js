@@ -1,11 +1,11 @@
-// 1-Erstellen sie eine array die Elemente "Apfel,Birne,Banana,Erdbeere" haben?
+// 1-Erstellen sie eine Array die Elemente "Apfel,Birne,Banana,Erdbeere" haben?
 const obst = ["Apfel", "Birne", "Banana", "Erdbeere"];
 const gemüse =["Lauchzwiebeln","Gurken","Bohnen","Kürbis"]
 
 // 2.Wie viele Elemente hat das Array?
 console.log(obst.length);
 
-// 3-was ist Erste und letze Elemente von array?
+// 3-Was ist Erste und letze Elemente von array?
 const erste = obst[0];
 console.log(erste);
 // letzte elemente
@@ -66,4 +66,14 @@ console.log(`Dirtte Element ist ${index3}`);
 
 // 10-Führen Sie Obst und Gemüse zusammen?
 const zusammenFühren = obst.concat(gemüse);
-console.log(`Hier haben obst und gemüse zusammengeführt => ${zusammenFühren} <=`)
+console.log(`Hier werden Obst und Gemüse zusammengeführt => ${zusammenFühren} <=`)
+
+// 11- Kopieren Sie Lauchzwiebeln statt Kürbis?
+const kopieren = gemüse.copyWithin(3,0,1)
+console.log(`Hier wird Kürbis ändert ${kopieren}`)
+
+
+// 12- Machsen Sie letze 2 Elemente Birne?
+const birne =obst.fill("Birne",2,9)
+console.log(birne)
+
