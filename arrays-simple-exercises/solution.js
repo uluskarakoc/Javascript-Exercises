@@ -1,6 +1,7 @@
 // 1-Erstellen sie eine Array die Elemente "Apfel,Birne,Banana,Erdbeere" haben?
 const obst = ["Apfel", "Birne", "Banana", "Erdbeere"];
 const gemüse =["Lauchzwiebeln","Gurken","Bohnen","Kürbis"]
+const zahlen = [1,2,3,4]
 
 // 2.Wie viele Elemente hat das Array?
 console.log(obst.length);
@@ -77,3 +78,10 @@ console.log(`Hier wird Kürbis ändert ${kopieren}`)
 const birne =obst.fill("Birne",2,9)
 console.log(birne)
 
+// 13- Benutzen Sie 3 für die Map?
+const map = zahlen.map(y => y * 2)
+console.log (map)
+
+// 14-Finden Sie die Elemente, die große 6 Buchstaben?
+const filterMethod = gemüse.filter(gemüse => gemüse.length > 6)
+console.log(filterMethod)
