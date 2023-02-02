@@ -32,6 +32,10 @@ let produkte = [
 ];
 
 // 4-Drucken Sie alle Produkte in der Produktliste mit einem Großbuchstaben.
+for (ulus=0; ulus<produkte.length; ulus++){
+  console.log(`4---${produkte[ulus].toUpperCase()}`)
+}
+
 
 // 5- Wie viele Produkte von Samsung sind in der Produktliste enthalten?
 
