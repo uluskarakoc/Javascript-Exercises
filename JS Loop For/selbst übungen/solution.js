@@ -2,7 +2,7 @@ let zahlen = [1, 5, 7, 15, 3, 25, 12, 24];
 
 // 1- Schreiben Sie der Quadratwurzel jedes Element in der Zahlen?
 for (let zahl = 0; zahl < zahlen.length; zahl++){
-  console.log(zahlen[zahl]*zahlen[zahl])
+  console.log(`1---${zahlen[zahl]*zahlen[zahl]}`)
 }
 
 // for(let zahl of zahlen){
@@ -12,12 +12,16 @@ for (let zahl = 0; zahl < zahlen.length; zahl++){
 // 2- Welche Zahlen ist 5 mal große von 5 auf dem Zahlenlist
 for(let zahl=0; zahl<zahlen.length; zahl++){
   if(zahlen[zahl] % 5==0){
-    console.log(zahlen[zahl])
+    console.log(`2---${zahlen[zahl]}`)
   }
 }
 
-
 // 3- Finden Sie die summe der gerade Zahlen auf dem Zahlen list
+for(let ulus = 0; ulus<zahlen.length; ulus++){
+  if(zahlen[ulus] % 2 == 0){
+    console.log(`3---gerade zahlen sind ${zahlen[ulus]}`)
+  }
+}
 
 let produkte = [
   "iphone 12",
