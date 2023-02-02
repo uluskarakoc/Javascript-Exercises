@@ -1,6 +1,13 @@
-let sayilar = [1, 5, 7, 15, 3, 25, 12, 24];
+let zahlen = [1, 5, 7, 15, 3, 25, 12, 24];
 
 // 1- Schreiben Sie der Quadratwurzel jedes Element in der Zahlen?
+for (let zahl =0; zahl < zahlen.length; zahl++){
+  console.log(zahl*zahl)
+}
+
+// for(let zahl of zahlen){
+//   console.log(zahl*zahl)
+// }
 
 // 2- Welche Zahlen ist 5 mal große von 5 auf dem Zahlenlist
 
