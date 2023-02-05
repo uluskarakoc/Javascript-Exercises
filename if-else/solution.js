@@ -14,6 +14,16 @@ if(zahl<50 && zahl>10){
 
 // 3 - x, y, z sayilarinin büyüklük karsilastirilmasini yapiniz.(else if'i arastiriniz.)
 // 3-Vergleichen sie die zahlen, die x,y,z sind, als große?
+let x =21
+let y =33
+let z =12
+if(x>y && x>z){
+console.log(`x en büyüktür`)
+}else if(y>x && y>z){
+    console.log(`3--y en büyüktür`)
+}else if(z>y && z>x){
+    console.log(`z en büyüktür`)
+}
 
 // 4 - 2 vize ve 1 final notuna göre hesaplanan ortalama icin;
 // 4-nach angaben die 3 note Durschnitt
