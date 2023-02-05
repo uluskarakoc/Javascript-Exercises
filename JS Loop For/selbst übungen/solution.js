@@ -54,18 +54,23 @@ for (i = 0; i < produkte.length; i++) {
 }
 console.log(`5---${stuck}`);
 
+// 6- Drucken Sie den Notendurchschnitt und den Leistungsstatus jedes Schülers in der Schülerliste aus.
+
 let schüler = [
   { name: "alex", nachname: "captain", not: [60, 70, 60] },
   { name: "ryan", nachname: "müller", not: [80, 70, 80] },
   { name: "mike", nachname: "scholz", not: [10, 20, 60] },
 ];
 
-// 6- Drucken Sie den Notendurchschnitt und den Leistungsstatus jedes Schülers in der Schülerliste aus.
-for (
-  notendurchschnitt = 0;
-  notendurchschnitt < schüler.length;
-  notendurchschnitt++
-) {
-  console.log();
+for (let stdnt of schüler) {
+  let sum_mark =0;
+  let durchnitt =0;
+  let stuck =0;
+  for(let mark of stdnt.not){
+    sum_mark += mark;
+    stuck++;
+  }
+  durchnitt=sum_mark/stuck;
+  console.log(`6---${stdnt.name} ${stdnt.nachname} hat die Note als Durschnitt  ${durchnitt}`);
 }
 
