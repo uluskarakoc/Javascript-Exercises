@@ -27,9 +27,26 @@ console.log(`x en büyüktür`)
 
 // 4 - 2 vize ve 1 final notuna göre hesaplanan ortalama icin;
 // 4-nach angaben die 3 note Durschnitt
-
+let vise1=10
+let vise2 =3
+let final =70
+console.log((((vise1+vise2)/10)*4 + (final/10)*6))
 // a - Eger ortalama 50 ve üstündeyse gecti, degilse kaldi yazsin.
-
+if((((vise1+vise2)/10)*4 + (final/10)*6)>50){
+    console.log(`4-a gectiniz`)
+}else{
+    console.log(`4-a kaldiniz`)
+}
 // b - Gecmek icin ortalama 50 bile olsa final notu en az 50 olmalidir.
-
+if(((((vise1+vise2)/10)*4 + (final/10)*6)>50) && final>50){
+    console.log(`4-b gectiniz`)
+}else{
+    console.log(`4-b kaldiniz`)
+}
 // c - Finalden 70 alindiginda ortalama 50' nin altinda olsa bile dersten gecilsin.
+if(((((vise1+vise2)/10)*4 + (final/10)*6)>50) || final>=70){
+    console.log(`4-c gectiniz`)
+}else{
+    console.log(`4-c kaldiniz`)
+}
+
