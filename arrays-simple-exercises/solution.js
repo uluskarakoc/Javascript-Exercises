@@ -73,8 +73,7 @@ console.log(`Hier werden Obst und Gemüse zusammengeführt => ${zusammenFühren}
 const kopieren = gemüse.copyWithin(3,0,1)
 console.log(`Hier wird Kürbis ändert ${kopieren}`)
 
-
-// 12- Machsen Sie letze 2 Elemente Birne?
+// 12- Machen Sie letze 2 Elemente Birne?
 const birne =obst.fill("Birne",2,9)
 console.log(birne)
 
