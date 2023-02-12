@@ -47,3 +47,16 @@ for (let i = 0; i < 1001; i++) {
    
 }
 console.log(`6---${summe}`)
+
+// **Bonus**
+// 7. Schreibe Programme, die zu folgenden Ausgaben in der Konsole führen:
+// >100 200 300 400 500 600 700 800 900 1000
+for(let i =0;i<=10; i++){
+  console.log(`7---${i} * 100 =${i *100}`)
+  
+  // >0 2 4 6 8 10
+}
+
+
+
+
