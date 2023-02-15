@@ -1,4 +1,4 @@
-// 1. -----------------
+  // 1. -----------------
 let i = 1;
 let printHeading = () => console.log("Exercise " + i++);
 
