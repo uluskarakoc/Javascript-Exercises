@@ -1,7 +1,7 @@
 // **1. Add Up.**
 let j = 1;
 let result = () => {
-  console.log("Result " + j++);
+  console.log(`Result----${j++}`);
 };
 result();
 
@@ -108,3 +108,90 @@ calcLifetimeSupply(25, 2);
 //   console.log(calcLifetimeSupply(32, 0.58));
 
 // **9. Where's Waldo?**
+result();
+const isWaldoHere = (a) => {
+  const neuVariable = a.toLowerCase();
+  return neuVariable.includes("waldo");
+};
+console.log(isWaldoHere("is there a wal here?"));
+console.log(isWaldoHere("I found you Waldo!"));
+console.log(isWaldoHere("Wait, don't you mean Wally?"));
+console.log(isWaldoHere("waldo is here"));
+// **10. Pie.**
+result();
+const isEqualSlices = (a, b, c) => {
+  return b * c <= a;
+};
+console.log(isEqualSlices(11, 5, 3));
+console.log(isEqualSlices(8, 3, 2));
+console.log(isEqualSlices(8, 3, 3));
+console.log(isEqualSlices(24, 12, 2));
+// **11. XO**
+result();
+const isEqualNumXandOs = (a) => {
+  let xzahl = 0;
+  let ozahl = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a.toLowerCase()[i] === "x") {
+      xzahl++;
+    } else if (a.toLowerCase()[i] === "o") {
+      ozahl++;
+    }
+  }
+  if (xzahl === 0 && ozahl === 0) {
+    return true;
+  } else if (xzahl === ozahl) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(isEqualNumXandOs("ooxx"));
+console.log(isEqualNumXandOs("xooxx"));
+console.log(isEqualNumXandOs("ooxXm"));
+console.log(isEqualNumXandOs("zpzpzpp"));
+console.log(isEqualNumXandOs("zzoo"));
+
+// function isEqualNumXandOs(str) {
+//   const LOWER_CASE_STR = str.toLowerCase();
+//   let countX = 0;
+//   let countO = 0;
+//   for (let i = 0; i < str.length; i++) {
+//       if (LOWER_CASE_STR[i] === "x") {
+//           countX++;
+//       } else if (LOWER_CASE_STR[i] === "o") {
+//           countO++;
+//       }
+//   }
+//   if ((countX === 0) && (countO === 0)) {
+//       return true;
+//   } else if (countX === countO) {
+//       return true;
+//   } else if (countX !== countO) {
+//       return false;
+//   }
+// }
+
+// console.log(isEqualNumXandOs("ooxx"));
+// console.log(isEqualNumXandOs("xooxx"));
+// console.log(isEqualNumXandOs("ooxXm"));
+// console.log(isEqualNumXandOs("zpzpzpp"));
+// console.log(isEqualNumXandOs("zzoo"));
+
+// **12. isPrime?**
+result();
+const isPrime = (a) => {
+  for (let i = 2; i < a; i++) {
+    if (a % i === 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+console.log(isPrime(6));
+console.log(isPrime(7));
+console.log(isPrime(13));
+console.log(isPrime(14));
+
+
