@@ -25,6 +25,12 @@ console.log(calculateDogAge(2));
 console.log(calculateDogAge(9));
 
 // The Lifetime Supply Calculator
+result();
+const calculateSupply = (alter, mengeprotag) => {
+  let maxalt = 100;
+  return `Du brauchst ${((maxalt-alter)*mengeprotag)*365}, um bis zum reifen Alter von ${maxalt-alter} zu leben`;
+};
+console.log(calculateSupply(32,3));
 
 // The Geometrizer
 
