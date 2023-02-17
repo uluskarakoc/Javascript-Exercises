@@ -39,8 +39,8 @@ const calcCircumference=(radius)=>{
 }
 console.log(calcCircumference(3))
 
-const calcArea=()=>{
-    return`Die Fläche ist NN`
+const calcArea=(radius)=>{
+    return`Die Fläche ist ${Math.PI*Math.pow(radius,2)}`
 }
-console.log(calcArea);
+console.log(calcArea(3));
 // The Temperature Converter
