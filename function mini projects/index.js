@@ -33,5 +33,14 @@ const calculateSupply = (alter, mengeprotag) => {
 console.log(calculateSupply(32,3));
 
 // The Geometrizer
+result();
+const calcCircumference=(radius)=>{
+    return `Der Umfang ist ${2*Math.PI*radius}`
+}
+console.log(calcCircumference(3))
 
+const calcArea=()=>{
+    return`Die Fläche ist NN`
+}
+console.log(calcArea);
 // The Temperature Converter
