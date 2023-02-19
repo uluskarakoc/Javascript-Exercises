@@ -44,3 +44,9 @@ const calcArea=(radius)=>{
 }
 console.log(calcArea(3));
 // The Temperature Converter
+result();
+
+const FahrenheitToCelsius =(n)=>{
+  return`${n}°F ist ${((n-32)*5)/9}°C`
+}
+console.log(FahrenheitToCelsius(100));
