@@ -32,9 +32,21 @@ console.log(crazyDiff(100));
 result();
 const strivify = (s) => {
   if (s.slice(0, 6) === "Strive") {
-    return s
-  }else{
+    return s;
+  } else {
     return "Strive" + s;
   }
 };
 console.log(strivify("ulus"));
+// # EXERCISE 5
+result();
+const check3and7=(n)=>{
+  if(n%3===0){
+    return true
+  }else if(n%7===0){
+    return `2 mal ${true}`
+  }else{
+    return `sayisinin kendisi ${n}`
+  }
+}
+console.log(check3and7(28))
