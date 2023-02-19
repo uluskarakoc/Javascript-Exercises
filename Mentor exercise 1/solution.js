@@ -17,3 +17,15 @@ const crazySum = (a, b) => {
   }
 };
 console.log(crazySum(3, 3));
+// # EXERCISE 3
+result();
+const crazyDiff = (n) => {
+  let variable = Math.abs(n - 19);
+  if (n > 19) {
+    return 3 * variable;
+  } else {
+    return n;
+  }
+};
+console.log(crazyDiff(100));
+
