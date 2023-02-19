@@ -56,5 +56,16 @@ const reverseString=(n)=>{return n.split("").reverse().join("")}
 console.log(reverseString("ulus"))
 // # EXERCISE 7
 result();
-const upperFirst=(n)=>{return n.charAt(0).toUpperCase() + n.slice(1)}
-console.log(upperFirst("konya"))
+// const upperFirst=(n)=>{return n.charAt(0).toUpperCase() + n.slice(1)}
+// console.log(upperFirst("konya ulus"))
+
+function upperFirst(s) {
+  let arr = s.split(" ");
+  for (let i = 0; i < arr.length; i++) {
+      arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+  }
+  return arr.join(" ");
+}
+
+console.log(upperFirst("ulus karakoc konyada yasiyorum"))
+
