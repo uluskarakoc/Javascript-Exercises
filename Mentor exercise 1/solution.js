@@ -54,4 +54,7 @@ console.log(check3and7(28))
 result();
 const reverseString=(n)=>{return n.split("").reverse().join("")} 
 console.log(reverseString("ulus"))
-
+// # EXERCISE 7
+result();
+const upperFirst=(n)=>{return n.charAt(0).toUpperCase() + n.slice(1)}
+console.log(upperFirst("konya"))
