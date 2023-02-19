@@ -50,3 +50,8 @@ const check3and7=(n)=>{
   }
 }
 console.log(check3and7(28))
+// # EXERCISE 6
+result();
+const reverseString=(n)=>{return n.split("").reverse().join("")} 
+console.log(reverseString("ulus"))
+
