@@ -14,30 +14,30 @@
 
 
 
-# EXERCISE 5
+# EXERCISE 4
 ## Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 
 
 
 
-# EXERCISE 6
+# EXERCISE 5
 ## Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7. HINT: Module Operator
 
 
 
 
-# EXERCISE 7
+# EXERCISE 6
 ## Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 
 
-# EXERCISE 8
+# EXERCISE 7
 ## Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 
 
-# EXERCISE 9
+# EXERCISE 8
 ## Write a function "cutString" to create a new string without the first and last character of a given string.
 
 
-# EXERCISE 10
+# EXERCISE 9
 ## Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 

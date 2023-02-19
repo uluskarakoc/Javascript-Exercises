@@ -28,4 +28,13 @@ const crazyDiff = (n) => {
   }
 };
 console.log(crazyDiff(100));
-
+// # EXERCISE 4
+result();
+const strivify = (s) => {
+  if (s.slice(0, 6) === "Strive") {
+    return s
+  }else{
+    return "Strive" + s;
+  }
+};
+console.log(strivify("ulus"));
