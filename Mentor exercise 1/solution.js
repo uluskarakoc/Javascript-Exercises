@@ -75,3 +75,13 @@ const cutString = (n) => {
   return n.slice(1, n.length - 1);
 };
 console.log(cutString("buchholz"));
+// # EXERCISE 9
+result();
+function giveMeRandom(n) {
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+      arr.push(Math.floor(Math.random() * 11));
+  }
+  return arr;
+}
+console.log(giveMeRandom(3));
