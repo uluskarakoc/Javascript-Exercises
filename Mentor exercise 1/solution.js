@@ -84,4 +84,4 @@ function giveMeRandom(n) {
   }
   return arr;
 }
-console.log(giveMeRandom(3));
+console.log(giveMeRandom(10));
