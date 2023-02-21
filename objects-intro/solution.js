@@ -83,15 +83,11 @@ const car = {
   color: "red",
   year: 2010,
 };
-const hasProperty = (a, b) => {
-  if (a.includes("b")) {
-    return true;
-  } else {
-    return false;
-  }
-};
-console.log(hasProperty("car", "Toyota"));
-// console.log(hasProperty("car", "blabla"));
+const hasProperty = (obj, prop) => {
+  return obj[prop] !== undefined;
+}
+console.log(hasProperty(car, "model")); // true
+console.log(hasProperty(car, "price")); // false
 // 7-----------
 result();
 const user1 = {
@@ -114,27 +110,47 @@ const user3 = {
   contentRights: ["user", "moderator"],
   password: "abc",
 };
+const users = [user1, user2, user3];
 
 // 1. Welcher user im Array hat das längste Passwort?
-const users = [user1, user2, user3];
-let num = [];
-for (i = 0; i < users.length; i++) {
-  num.push(Math.max(users[i]["password"].length));
+// let num = [];
+// for (i = 0; i < users.length; i++) {
+//   num.push(Math.max(users[i]["password"].length));
+// }
+// console.log(num)
+// console.log(`1 Längste Passwort ist ${Math.max(...num)}`);
+let longestPasswordName = ""
+let longestPassword = ""
+for(let i = 0; i<users.length; i++){
+    if(users[i].password.length > longestPassword.length){
+        longestPassword = users[i].password;
+        longestPasswordName = users[i].name;
+    }
 }
-console.log(`1 Längste Passwort ist ${Math.max(...num)}`);
+console.log(longestPasswordName);
 
 // 2. Welcher user im array ist am ältesten?
-let year = [];
-for (i = 0; i < users.length; i++) {
-  year.push(users[i]["yearBorn"]);
-}
-console.log(`2 am ältesten ist ${Math.min(...year)}`);
-// 3. Gibt es einen user im array der ein passwort hat was kürzer ist als 4 buchstaben der/die admin ist?
-const paswort = () => {
-  for (i = 0; i < users.length; i++) {
-    if (users[i]["password"].length < 4) {
-      return users[i]["name"];
+// let year = [];
+// for (i = 0; i < users.length; i++) {
+//   year.push(users[i]["yearBorn"]);
+// }
+// console.log(`2 am ältesten ist ${Math.min(...year)}`);
+let oldestUserName= ""
+let oldestYear = 2023
+for(let i = 0; i<users.length; i++){
+    if(users[i].yearBorn < oldestYear){
+        oldestYear = users[i].yearBorn;
+        oldestUserName = users[i].name;
     }
+}
+console.log(oldestUserName)
+// 3. Gibt es einen user im array der ein passwort hat was kürzer ist als 4 buchstaben der/die admin ist?
+const passwort = () => {
+  for (i = 0; i < users.length; i++) {
+    if (users[i]["password"].length < 4 && users[i].contentRights.includes("admin")) {
+      
+    }
+     return users[i]["name"];
   }
 };
-console.log(paswort())
+console.log(passwort())
