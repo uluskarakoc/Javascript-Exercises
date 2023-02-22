@@ -44,22 +44,39 @@ const student = {
     { name: "mina", email: "mina@mail.com", isFavorite: true },
   ],
 };
-let lehrerEmails = [];
+// 4.1.
 console.log(`1 Der name des Students ist ${student["name"]}`);
+// 4.2.
 console.log(`2 Die Email des Students ist ${student["info"]["email"]}`);
+// 4.3.
 console.log(
   `3 Der Name des ersten Lehrers im teachers ist ${student.teachers[0]["name"]}`
 );
+// 4.4.
 console.log(`4 Student hat ${student.subjects.length} Fächer`);
+// 4.5.
+let lehrerEmails = [];
 lehrerEmails.push(
   student.teachers[0]["email"],
   student.teachers[1]["email"],
   student.teachers[2]["email"]
 );
+// diger cözüm 4’ün 5'i
+// let arr = [];
+// for (let i = 0; i < student.teachers.length; i++) {
+//     arr.push(student.teachers[i].email)
+// }
+// console.log(arr);
 console.log(`5 Die Emails aller Lehrer sind ${lehrerEmails}`);
-console.log(
-  `6 Die Email des Lieblingslehrers des Students ist ${student.teachers[2]["email"]}`
-);
+// 4.6.
+console.log(`6 Die Email des Lieblingslehrers des Students ist ${student.teachers[2]["email"]}`);
+// asil cözüm asagidaki
+for (let i = 0; i < student.teachers.length; i++) {
+  if (student.teachers[i].isFavorite) {
+      console.log(student.teachers[i].email);
+  }
+}
+
 // 5-----------
 result();
 const pets = [
@@ -76,6 +93,7 @@ const alleWerte = () => {
   return tiere.join(", ");
 };
 console.log(alleWerte());
+
 // 6-----------
 result();
 const car = {
