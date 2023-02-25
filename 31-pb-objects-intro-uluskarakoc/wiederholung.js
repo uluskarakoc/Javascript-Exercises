@@ -133,6 +133,7 @@ const users = [user1, user2, user3];
 
 // Schreibe Code um folgende Fragen zu beantworten:
 // 1. Welcher user im Array hat das längste Passwort?
+result();
 let longPasswortUserName = "";
 let longPasswort = "";
 for (let i = 0; i < users.length; i++) {
@@ -143,8 +144,9 @@ for (let i = 0; i < users.length; i++) {
 }
 console.log(longPasswortUserName);
 // 2. Welcher user im array ist am ältesten?
+result();
 let zahl = 2023;
-let oldestAlt=""
+let oldestAlt = "";
 let olderName = "";
 for (let i = 0; i < users.length; i++) {
   if (users[i].yearBorn < zahl) {
@@ -154,3 +156,17 @@ for (let i = 0; i < users.length; i++) {
 }
 console.log(olderName);
 // 3. Gibt es einen user im array der ein passwort hat was kürzer ist als 4 buchstaben der/die admin ist?
+result();
+const passwordfrage = () => {
+  for (let i = 0; i < users.length; i++) {
+    if (
+      users[i].password.length < 4 &&
+      users[i].contentRights.includes("admin")
+    ) {
+    }
+   return users[i].name;
+  }
+};
+console.log(passwordfrage())
+
+// soruuuu bunu sadece for döngüsü ile console ile nasil yazarim?
