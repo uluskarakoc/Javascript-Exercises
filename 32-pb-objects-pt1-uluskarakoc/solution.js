@@ -67,13 +67,14 @@ console.log(getKeyValueObjects());
 result();
 console.log(person.printDetails());
 
-
 // 6. Merge
 result();
 let firstObject = { firstName: "John" };
 let secondObject = { lastName: "Smith" };
-const mergeObjects=(o1,o2)=>{return Object.assign(o1,o2)}
-console.log(mergeObjects(firstObject,secondObject))
+const mergeObjects = (o1, o2) => {
+  return Object.assign(o1, o2);
+};
+console.log(mergeObjects(firstObject, secondObject));
 /**
  * Bonus Questions
  */
@@ -81,7 +82,22 @@ console.log(mergeObjects(firstObject,secondObject))
 // 7. What happens if you merge two objects with the same property values?
 // Do you expect to change either or both of the original objects by combining these two objects?
 // Why or why not? Comment your answers.
+result();
 
 // 8. Switch Keys and Values
+result();
+oldObject = {
+  location: "berlin",
+  status: "occupied",
+};
+const switchedCopy = (n) => {
+  const entriesArray = Object.entries(n);
+  let reservedArray = [];
+  for (let i = 0; i < entriesArray.length; i++) {
+    reservedArray.push(entriesArray[i].reverse());
+  }
+  return Object.fromEntries(reservedArray);
+};
+console.log(switchedCopy(oldObject));
 
 // 9 Return Keys and Values
