@@ -71,6 +71,20 @@ for(let i=0;i<student.teachers.length;i++){
      }
 }
 
+// 5. Schreibe eine Funktion die alle Werte des Properties "name" der Objekte im Array ausgibt. 
+result()
+const pets = [
+  { name: "Fluffy", type: "cat" },
+  { name: "Spot", type: "dog" },
+  { name: "Goldie", type: "fish" }
+];
+    let names=[]
+    for(let i =0;i<pets.length;i++){
+        names.push(pets[i].name)
+    } 
+console.log(names.join(", "))
+
+
 
 
 
