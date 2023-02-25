@@ -44,12 +44,15 @@ let person = {
   age: 28,
   height: 178,
   "eye colour": "brown",
+  printDetails: function () {
+    return `${this.firstName} ${this.lastName} is a citizen of ${this.citizenship}.  They are ${this.gender}, ${this.height} and have ${this["eye colour"]}`;
+  },
 };
 const outArray = [];
 const getKeyValueObjects = () => {
   for (u in person) {
     const innerObject = {};
-    innerObject[u] = person[u] ;
+    innerObject[u] = person[u];
     // soruuuuuuuuuu consol da sadece valuler gözükmeli degilmiydi??
     // soruuuuuuuuuuu person la innerobject eiliginde siralama degisince neden calismadi???
     // console.log(person[u])
@@ -61,6 +64,9 @@ const getKeyValueObjects = () => {
 console.log(getKeyValueObjects());
 
 // 5. Add A Method
+result();
+console.log(person.printDetails());
+
 
 // 6. Merge
 
