@@ -143,4 +143,14 @@ for (let i = 0; i < users.length; i++) {
 }
 console.log(longPasswortUserName);
 // 2. Welcher user im array ist am ältesten?
+let zahl = 2023;
+let oldestAlt=""
+let olderName = "";
+for (let i = 0; i < users.length; i++) {
+  if (users[i].yearBorn < zahl) {
+    oldestAlt = users[i].yearBorn;
+    olderName = users[i].name;
+  }
+}
+console.log(olderName);
 // 3. Gibt es einen user im array der ein passwort hat was kürzer ist als 4 buchstaben der/die admin ist?
