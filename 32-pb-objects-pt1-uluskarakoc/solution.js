@@ -69,7 +69,11 @@ console.log(person.printDetails());
 
 
 // 6. Merge
-
+result();
+let firstObject = { firstName: "John" };
+let secondObject = { lastName: "Smith" };
+const mergeObjects=(o1,o2)=>{return Object.assign(o1,o2)}
+console.log(mergeObjects(firstObject,secondObject))
 /**
  * Bonus Questions
  */
