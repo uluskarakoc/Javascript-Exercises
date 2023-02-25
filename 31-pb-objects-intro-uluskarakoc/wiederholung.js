@@ -84,6 +84,17 @@ const pets = [
     } 
 console.log(names.join(", "))
 
+// Bonus 1: Schreibe eine Funktion namens hasProperty, die zwei Parameter benötigt: ein Objekt und einen String. Die Funktion sollte true zurückgeben, wenn das Objekt eine Eigenschaft mit demselben Namen wie der String hat, und andernfalls false.
+const car = {
+  model: "Toyota",
+  color: "red",
+  year: 2010
+};
+const hasProperty=(Objekt,String)=>{
+return Object.hasOwn(Objekt,String)
+}
+console.log(hasProperty(car,"model")); 
+console.log(hasProperty(car,"price")); 
 
 
 
