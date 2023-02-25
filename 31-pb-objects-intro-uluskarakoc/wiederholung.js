@@ -1,5 +1,5 @@
 let i=1;
-const result=()=>{console.log(`Result ${i++}`)}
+const result=()=>{console.log(`Result*********${i++}`)}
 
 // # PB-Objects-Intro
 // 1. Benutze die dot notation um die einzelnen Werte des Objektes auszugeben.
@@ -63,6 +63,14 @@ for(let i=0;i<student.teachers.length;i++){
     emails.push(student.teachers[i].email)
 }
 console.log(emails)
+// 6. Was ist die Email des lieblingslehrers des Students? 
+for(let i=0;i<student.teachers.length;i++){
+     if(student.teachers[i].isFavorite ===true){
+        console.log(student["teachers"][i]["email"])
+       break;  
+     }
+}
+
 
 
 
