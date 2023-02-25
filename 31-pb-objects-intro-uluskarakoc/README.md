@@ -13,7 +13,7 @@ console.log(dein code hier); // 25
 console.log(dein code hier); // teacher
 ```
 
-2. Schreibe eine Funktion die einen String animmt und die dazugehörigen Werte des person Objekts ausgibt.
+2. Schreibe eine Funktion die einen String annimmt und die dazugehörigen Werte des person Objekts ausgibt.
 ```
 console.log(getProp("name")); // Alice
 console.log(getProp("age")); // 25
