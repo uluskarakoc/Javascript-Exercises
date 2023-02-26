@@ -102,7 +102,6 @@ console.log(switchedCopy(oldObject));
 
 // 9 Return Keys and Values
 result();
-keysAndValues = { a: 1, b: 2, c: 3 };
 const getKeysAndValues = (obj) => {
   let objArr = [[], []];
   const arrObj = Object.entries(obj);
@@ -112,4 +111,8 @@ const getKeysAndValues = (obj) => {
   }
   return objArr;
 };
-console.log(getKeysAndValues(keysAndValues));
+console.log(getKeysAndValues({ a: 1, b: 2, c: 3 }));
+console.log(getKeysAndValues({ key: true }));
+
+
+
