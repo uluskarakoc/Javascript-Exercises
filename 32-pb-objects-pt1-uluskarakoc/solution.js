@@ -101,3 +101,15 @@ const switchedCopy = (n) => {
 console.log(switchedCopy(oldObject));
 
 // 9 Return Keys and Values
+result();
+keysAndValues = { a: 1, b: 2, c: 3 };
+const getKeysAndValues = (obj) => {
+  let objArr = [[], []];
+  const arrObj = Object.entries(obj);
+  for (i = 0; i < arrObj.length; i++) {
+    objArr[0].push(arrObj[i][0]);
+    objArr[1].push(arrObj[i][1]);
+  }
+  return objArr;
+};
+console.log(getKeysAndValues(keysAndValues));
