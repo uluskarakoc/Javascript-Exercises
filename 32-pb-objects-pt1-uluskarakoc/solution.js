@@ -54,7 +54,7 @@ const getKeyValueObjects = () => {
     const innerObject = {};
     innerObject[u] = person[u];
     // soruuuuuuuuuu consol da sadece valuler gözükmeli degilmiydi??
-    // soruuuuuuuuuuu person la innerobject eiliginde siralama degisince neden calismadi???
+    // soruuuuuuuuuuu person la innerobject esitliginde siralama degisince neden calismadi???
     // console.log(person[u])
     // console.log(u)
     outArray.push(innerObject);
