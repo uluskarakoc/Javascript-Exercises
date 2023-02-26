@@ -2,18 +2,35 @@ let i = 1;
 const result = () => {
   console.log(`Result*****${i++}`);
 };
+result();
 // # **1. Überprüfe, ob eine Zahl innerhalb eines bestimmten Bereichs liegt.**
 const isWithinRange = (zahl, obj) => {
   const entries = Object.entries(obj);
-  for (let i = 0; i < entries.length; i++) {
-    if (zahl >= entries[0][1] && zahl <= entries[1][1]) {
-      return true;
-    }
-    return false;
+  if (zahl >= entries[0][1] && zahl <= entries[1][1]) {
+    return true;
   }
+  return false;
 };
 console.log(isWithinRange(4, { min: 0, max: 5 }));
 console.log(isWithinRange(4, { min: 4, max: 5 }));
 console.log(isWithinRange(4, { min: 6, max: 10 }));
 console.log(isWithinRange(5, { min: 5, max: 5 }));
-
+// # **2. Scrabble.**
+result();
+const scrabbleHand = [
+  { tile: "N", score: 1 },
+  { tile: "K", score: 5 },
+  { tile: "Z", score: 10 },
+  { tile: "X", score: 8 },
+  { tile: "D", score: 2 },
+  { tile: "A", score: 1 },
+  { tile: "E", score: 1 },
+];
+const calcMaxScrabbleScore = (obj) => {
+let sum=0;
+  for (let i=0;i<obj.length;i++) {
+    sum+=obj[i].score
+  }
+   return sum;
+};
+console.log(calcMaxScrabbleScore(scrabbleHand));
