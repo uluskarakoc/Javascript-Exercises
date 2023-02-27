@@ -109,5 +109,13 @@ let values=Object.values(programming)
 for(i=0;i<1;i++){
   console.log(values.join(", "))
 }
+// 6.8
+programming.worthwhile = () => {
+  if (this.isChallenging && this.isRewarding) { 
+      return `Learning the programming languages: ${programming.languages.join(", ")} is rewarding and challenging.`
+  }
+  return false;
+};
+console.log(programming.worthwhile());
 
 console.log(programming)
