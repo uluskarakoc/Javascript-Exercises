@@ -47,20 +47,35 @@ const isEmptyObject = (obj) => {
 console.log(isEmptyObject({}));
 console.log(isEmptyObject({ a: 1 }));
 // # **4. Buchstaben zählen.**
-result()
-const countLetters=(str)=>{
-  let countObj={}
-  for(let i=0;i<str.length;i++){
-    let letter=str[i]
-    if(countObj[letter]){
-      countObj[letter]++
-    }else{
-      countObj[letter]=1
+result();
+const countLetters = (str) => {
+  let countObj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (countObj[str[i]]) {
+      countObj[str[i]]++;
+    } else {
+      countObj[str[i]] = 1;
     }
-   
   }
 
-  return countObj
-}
-console.log(countLetters("tree"))
+  return countObj;
+};
+console.log(countLetters("tree"));
+console.log(countLetters("uluskarakoc"));
 
+// # **5. Kostenloser Versand.**
+result();
+const freeShipping = (obj) => {
+  let objVal = Object.values(obj);
+  let sum = 0;
+  for (let i = 0; i < objVal.length; i++) {
+    sum += objVal[i];
+   
+  }
+  return  sum >= 50 ? "true" : "false";
+};
+console.log(freeShipping({ Sponge: 3.5, Soap: 5.99 }));
+console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
+console.log(
+  freeShipping({ Wool: 13.99, "Knitting Needles": 15.5, Bag: 13.99 })
+);
