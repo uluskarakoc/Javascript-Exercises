@@ -27,10 +27,22 @@ const scrabbleHand = [
   { tile: "E", score: 1 },
 ];
 const calcMaxScrabbleScore = (obj) => {
-let sum=0;
-  for (let i=0;i<obj.length;i++) {
-    sum+=obj[i].score
+  let sum = 0;
+  for (let i = 0; i < obj.length; i++) {
+    sum += obj[i].score;
   }
-   return sum;
+  return sum;
 };
 console.log(calcMaxScrabbleScore(scrabbleHand));
+// # **3. Is it an empty object?**
+result();
+const isEmptyObject = (obj) => {
+  const length = Object.entries(obj).length;
+  if (length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(isEmptyObject({}));
+console.log(isEmptyObject({ a: 1 }));
