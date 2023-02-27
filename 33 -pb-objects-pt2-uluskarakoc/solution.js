@@ -70,7 +70,6 @@ const freeShipping = (obj) => {
   let sum = 0;
   for (let i = 0; i < objVal.length; i++) {
     sum += objVal[i];
-   
   }
   return  sum >= 50 ? "true" : "false";
 };
@@ -79,3 +78,36 @@ console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
 console.log(
   freeShipping({ Wool: 13.99, "Knitting Needles": 15.5, Bag: 13.99 })
 );
+// # **6. Programmier-Objekt.**
+result();
+const programming = {
+  languages: ["JavaScript", "Python", "Ruby"],
+  isChallenging: true,
+  isRewarding: true,
+  difficulty: 8,
+  jokes: "https://www.quora.com/What-are-the-most-popular-computer-programming-jokes"
+};
+// 6.1
+programming.languages.push("Go")
+// 6.2
+programming.difficulty=7
+// 6.3
+delete programming.jokes
+// 6.4
+programming.isFun=true
+// 6.5
+for(i=0;i<1;i++){
+  console.log(programming.languages.join(", "))
+}
+// 6.6
+let keys=Object.keys(programming)
+for(i=0;i<1;i++){
+  console.log(keys.join(", "))
+}
+// 6.7
+let values=Object.values(programming)
+for(i=0;i<1;i++){
+  console.log(values.join(", "))
+}
+
+console.log(programming)
