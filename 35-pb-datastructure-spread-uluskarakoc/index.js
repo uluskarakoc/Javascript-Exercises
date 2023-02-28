@@ -32,27 +32,39 @@ end();
 // #### 4. Find the Smallest
 start();
 const findSmallestNumber = (arr) => {
-    return Math.min(...arr);
-  };
-  console.log(findSmallestNumber(number));
+  return Math.min(...arr);
+};
+console.log(findSmallestNumber(number));
 end();
 // #### 5. Clone and Merge
-start()
-const person = {name: "John"}
-const job = {role: "Teacher"}
+start();
+const person = { name: "John" };
+const job = { role: "Teacher" };
 // 5.1
-let newObj={...person}
+let newObj = { ...person };
 console.log(newObj);
 end();
 // 5.2
-let employee={...person,...job}
+let employee = { ...person, ...job };
 console.log(employee);
 end();
 // 5.3
-job.role="Plumber"
+job.role = "Plumber";
 console.log(job);
 console.log(employee);
-end()
-
-
-
+end();
+// #### 6.  Is the average a whole number?
+start();
+let parameters = [9, 2, 2, 5];
+const isWhole = (...args) => {
+  let sum = 0;
+  for (i = 0; i < args.length; i++) {
+    sum += args[i];
+  }
+   if ((sum / args.length)%1===0) {
+      return true;
+    } else {
+      return false;
+    }
+};
+console.log(isWhole(parameters));
