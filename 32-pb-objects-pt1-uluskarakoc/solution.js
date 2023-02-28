@@ -48,8 +48,8 @@ let person = {
     return `${this.firstName} ${this.lastName} is a citizen of ${this.citizenship}.  They are ${this.gender}, ${this.height} and have ${this["eye colour"]}`;
   },
 };
-const outArray = [];
 const getKeyValueObjects = () => {
+  const outArray = [];
   for (u in person) {
     const innerObject = {};
     innerObject[u] = person[u];

@@ -157,16 +157,16 @@ for (let i = 0; i < users.length; i++) {
 console.log(olderName);
 // 3. Gibt es einen user im array der ein passwort hat was kürzer ist als 4 buchstaben der/die admin ist?
 result();
-const passwordfrage = () => {
-  for (let i = 0; i < users.length; i++) {
+const passwordfrage = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
     if (
-      users[i].password.length < 4 &&
-      users[i].contentRights.includes("admin")
+      arr[i].password.length < 4 &&
+      arr[i].contentRights.includes("admin")
     ) {
     }
-   return users[i].name;
+   return arr[i].name;
   }
 };
-console.log(passwordfrage())
+console.log(passwordfrage(users))
 
 // soruuuu bunu sadece for döngüsü ile console ile nasil yazarim?
