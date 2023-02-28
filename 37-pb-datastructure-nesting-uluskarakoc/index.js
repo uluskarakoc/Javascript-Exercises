@@ -54,8 +54,12 @@ recipe.ingredients.ginger = "1 tsp";
 recipe.ingredients.ginger = "2 tsp";
 // 3.5
 recipe.showIngredients = () => {
-  let arr = Object.entries(recipe);
-  for (i = 0; i < arr[2].length; i++) {
-    console.log(arr[2][i]);
+  let arr = Object.entries(recipe.ingredients);
+  for (i = 0; i < arr.length; i++) {
+    console.log(arr[i].join(", "));
   }
 };
+ recipe.showIngredients()
+
+// let arr = Object.entries(recipe.ingredients);
+// console.log(arr[1])
