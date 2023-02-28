@@ -29,3 +29,30 @@ const findLargestNumber = (arr) => {
 };
 console.log(findLargestNumber(number));
 end();
+// #### 4. Find the Smallest
+start();
+const findSmallestNumber = (arr) => {
+    return Math.min(...arr);
+  };
+  console.log(findSmallestNumber(number));
+end();
+// #### 5. Clone and Merge
+start()
+const person = {name: "John"}
+const job = {role: "Teacher"}
+// 5.1
+let newObj={...person}
+console.log(newObj);
+end();
+// 5.2
+let employee={...person,...job}
+console.log(employee);
+end();
+// 5.3
+job.role="Plumber"
+console.log(job);
+console.log(employee);
+end()
+
+
+
