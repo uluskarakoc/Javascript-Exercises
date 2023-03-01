@@ -21,7 +21,7 @@ const onlyEvenValues = (arr) => {
       return [];
     }
   });
-  return filteredArray.flat().flat()
+  return filteredArray.flat().flat();
 };
 
 console.log(onlyEvenValues([1, 2, 3]));
@@ -29,3 +29,13 @@ console.log(onlyEvenValues([5, 1, 2, 3, 10]));
 
 // **3.** Write a function named `showFirstAndLast` which accepts an array of strings and returns a new array with only the first and last character of each string.
 result();
+const showFirstAndLast = (arr) => {
+  let sum = "";
+  let array = Object.entries(arr);
+  for (i = 0; i < array.length; i++) {
+    sum += array[i][1][0] + array[i][1][array[i][1].length - 1] + " ";
+  }
+  return sum.split(" ");
+};
+console.log(showFirstAndLast(["colt", "matt", "tim", "udemy"]));
+console.log(showFirstAndLast(["hi", "goodbye", "smile"]));
