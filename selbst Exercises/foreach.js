@@ -64,4 +64,9 @@ console.log(words); // ['two', 'three', 'four']
 result()
 let nums=[42,32,56,26,45]
 nums.forEach((a,b,c,d)=>{console.log(a,b,c,d)})
+
+
+forEach((element) => { /* … */ })
+forEach((element, index) => { /* … */ })
+forEach((element, index, array) => { /* … */ })
   
