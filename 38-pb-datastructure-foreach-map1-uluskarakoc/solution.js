@@ -27,15 +27,33 @@ const onlyEvenValues = (arr) => {
 console.log(onlyEvenValues([1, 2, 3]));
 console.log(onlyEvenValues([5, 1, 2, 3, 10]));
 
+
+
 // **3.** Write a function named `showFirstAndLast` which accepts an array of strings and returns a new array with only the first and last character of each string.
 result();
 const showFirstAndLast = (arr) => {
   let sum = "";
-  let array = Object.entries(arr);
-  for (i = 0; i < array.length; i++) {
-    sum += array[i][1][0] + array[i][1][array[i][1].length - 1] + " ";
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i][0] + arr[i].at(-1)+ " ";
   }
   return sum.split(" ");
 };
 console.log(showFirstAndLast(["colt", "matt", "tim", "udemy"]));
 console.log(showFirstAndLast(["hi", "goodbye", "smile"]));
+
+
+
+
+// **4.** Schreibe eine Funktion namens `addKeyAndValue`, die ein Array von Objekten, einen Schlüssel und einen Wert akzeptiert und dann das an die Funktion übergebene Array mit dem neuen Schlüssel und Wert für jedes Objekt zurückgibt
+result()
+// const addKeyAndValue=()=>{
+    
+// }
+
+let dwarves = ['Bifur', 'Bofur', 'Bombur', 'Fili', 'Kili', 'Oin', 'Gloin', 'Thorin', 'Balin', 'Dwalin', 'Nori', 'Dori']
+
+const result1 = dwarves.map(function (item, index, array) {
+    return index, item
+})
+
+console.log(result1)
