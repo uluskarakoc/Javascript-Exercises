@@ -15,16 +15,17 @@ const inventory = [
   console.log(inventory.find(isCherries));
   // { name: 'cherries', quantity: 5 }
   result()
-  const inventory = [
+  const inventory1 = [
     { name: "apples", quantity: 2 },
     { name: "bananas", quantity: 0 },
     { name: "cherries", quantity: 5 },
   ];
   
-  const result = inventory.find(({ name }) => name === "cherries");
+  const result1 = inventory1.find(({ name }) => name === "cherries");
   
   console.log(result); // { name: 'cherries', quantity: 5 }
-  result()const arrayLike = {
+  result()
+  const arrayLike = {
     length: 3,
     0: 2,
     1: 7.3,
