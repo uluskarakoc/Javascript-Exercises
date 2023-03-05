@@ -13,17 +13,20 @@ doubleValues([5, 1, 2, 3, 10]); // [10,2,4,6,20]
 
 // **2.** Write a function named `onlyEvenValues` which accepts an array and returns a new array with only the even values from the original array.
 result();
+// const onlyEvenValues = (arr) => {
+//   const filteredArray = arr.map((n) => {
+//     if (n % 2 === 0) {
+//       return n;
+//     } else {
+//       return [];
+//     }
+//   });
+//   return filteredArray.flat().flat();
+// };
 const onlyEvenValues = (arr) => {
-  const filteredArray = arr.map((n) => {
-    if (n % 2 === 0) {
-      return n;
-    } else {
-      return [];
-    }
-  });
-  return filteredArray.flat().flat();
+  let result = arr.filter((item) => item % 2 === 0);
+  return result;
 };
-
 console.log(onlyEvenValues([1, 2, 3]));
 console.log(onlyEvenValues([5, 1, 2, 3, 10]));
 
@@ -66,15 +69,16 @@ console.log(
 // **5.** Write a function named `vowelCount` which accepts a string and returns an object with the keys as the vowel and the values as the number of times the vowel appears in the string. This function should be case insensitive so that both lowercase and uppercase letters are counted.
 result();
 const vowelCount = (str) => {
-  const vowelArr = ["a", "e", "u", "o", "i", "ü", "ö"];
-  const countObj = {}
-  const currentStr = [...str.toLowerCase()];
-  currentStr.forEach((letter) => {
-    if (vowelArr.includes(letter)) {
-      countObj[letter] = (countObj[letter] || 0) + 1;
+  let strArray = str.toLowerCase().split('');
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let result = {};
+  strArray.forEach((element) => {
+    if (vowels.includes(element)) {
+      result[element] ? result[element]++ : (result[element] = 1);
+       // result[element] = (result[element] || 0) + 1;
     }
   });
-  return countObj;
+  return result;
 };
 console.log(vowelCount("Elie"))
 console.log(vowelCount("Tim"))
