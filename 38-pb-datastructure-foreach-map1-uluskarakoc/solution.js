@@ -33,7 +33,7 @@ console.log(onlyEvenValues([5, 1, 2, 3, 10]));
 result();
 const showFirstAndLast = (arr) => {
   let sum = "";
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i][0] + arr[i].at(-1)+ " ";
   }
   return sum.split(" ");
@@ -53,7 +53,7 @@ result()
 let dwarves = ['Bifur', 'Bofur', 'Bombur', 'Fili', 'Kili', 'Oin', 'Gloin', 'Thorin', 'Balin', 'Dwalin', 'Nori', 'Dori']
 
 const result1 = dwarves.map(function (item, index, array) {
-    return index, item
+    return 
 })
 
 console.log(result1)
