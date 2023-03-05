@@ -1,6 +1,5 @@
 let i=1;
 const result=()=>{console.log(`Result----------------${i++}`)}
-result()
 const characters = [
     {
         name: 'Luke Skywalker',
@@ -33,5 +32,18 @@ const characters = [
 ];
 //***MAP***
 //1. Get array of all names
-const allNames =characters.map((n)=>{return n.name})
+result()
+const allNames =characters.map(n=>{return n.name})
 console.log(allNames)
+//2. Get array of all heights
+result()
+const allHeights =characters.map(n=>n.height).sort((a,b)=>a-b)
+console.log(allHeights)
+//3. Get array of objects with just name and height properties
+result()
+const heightAndNames =characters.map((n)=>{ return n.name +" "+ n.height})
+console.log(heightAndNames)
+//4. Get array of all first names
+result()
+const firstNames =characters.map((n)=>{return n.name.slice(0,6)})
+console.log(firstNames)
