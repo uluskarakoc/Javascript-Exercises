@@ -47,3 +47,21 @@ console.log(heightAndNames)
 result()
 const firstNames =characters.map((n)=>{return n.name.slice(0,6)})
 console.log(firstNames)
+//***FILTER***
+//1. Get characters with mass greater than 100
+result()
+const mass=characters.filter(n=>n.mass>100)
+console.log(mass);
+//2. Get characters with height less than 200
+result()
+const height=characters.filter(n=>n.height<200)
+console.log(height);
+//3. Get all male characters
+result()
+const male=characters.filter(n=>n.gender==="male")
+console.log(male);
+//4. Get all female characters
+result()
+const female=characters.filter(n=>n.gender==="female")
+console.log(female);
+
