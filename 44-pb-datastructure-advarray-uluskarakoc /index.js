@@ -27,12 +27,20 @@ console.log(gerade);
 result();
 // #### 5. Summe
 result();
-const summieren=[1,2,3,4,5].reduce((acc,curr)=> {return acc +curr},0)
-const summieren1=[6,7,7].reduce((acc,curr)=> {return acc +curr},0)
-console.log(summieren)
-console.log(summieren1)
+const summieren = [1, 2, 3, 4, 5].reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+const summieren1 = [6, 7, 7].reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log(summieren);
+console.log(summieren1);
 // #### 6. Quadratwurzel
+result();
 const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
+const filterItems = (arr, word) => {
+  return arr.filter((n) => n.includes(word));
+};
 
-
-
+console.log(filterItems(friends, "ka")); // ["Rika"];
+console.log(filterItems(friends, "e")); // ["Jenna", "Bleda", "Oliver"];

@@ -1,5 +1,23 @@
 let i=1;
 const result=()=>{console.log(`Result🥊🥊🥊🥊🥊🥊${i++}`)}
+
+// Arrow function
+// filter((element) => { /* … */ })
+// filter((element, index) => { /* … */ })
+// filter((element, index, array) => { /* … */ })
+
+// // Callback function
+// filter(callbackFn)
+// filter(callbackFn, thisArg)
+
+// // Inline callback function
+// filter(function (element) { /* … */ })
+// filter(function (element, index) { /* … */ })
+// filter(function (element, index, array) { /* … */ })
+// filter(function (element, index, array) { /* … */ }, thisArg)
+
+
+
 // The following example returns all prime numbers in the array:
 result()
 const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
