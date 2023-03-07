@@ -38,3 +38,12 @@ for(i=1;i<5;i++){
     }
 }
 console.log(arr.join(" "))
+// 3/B
+arr2=[]
+for(i=1;i<5;i++){
+    for(j=0;j<5;j++){
+      arr2.push(j)
+    }
+}
+console.log(arr2.join(" "));
+
