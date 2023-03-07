@@ -25,6 +25,13 @@ const gerade = [1, 2, 3, 11, 12, 13].filter((n) => n % 2 === 0);
 console.log(gerade);
 // #### 4. Freunde filtern
 result();
+const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
+const filterItems = (arr, word) => {
+  return arr.filter((n) => n.includes(word));
+};
+
+console.log(filterItems(friends, "ka")); // ["Rika"];
+console.log(filterItems(friends, "e")); // ["Jenna", "Bleda", "Oliver"];
 // #### 5. Summe
 result();
 const summieren = [1, 2, 3, 4, 5].reduce((acc, curr) => {
@@ -37,10 +44,4 @@ console.log(summieren);
 console.log(summieren1);
 // #### 6. Quadratwurzel
 result();
-const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
-const filterItems = (arr, word) => {
-  return arr.filter((n) => n.includes(word));
-};
-
-console.log(filterItems(friends, "ka")); // ["Rika"];
-console.log(filterItems(friends, "e")); // ["Jenna", "Bleda", "Oliver"];
+console.log([3, 6, 8, 2, 5].map((n) => Math.sqrt(n)));
