@@ -116,7 +116,18 @@ result()
 const genderEvery=characters.every(n=>n.gender==="male")
 console.log(genderEvery)
 //***REDUCE***
+result()
+
 //1. Get total mass of all characters
+const massReduce=characters.reduce((acc,curr)=>{
+    return acc+curr.mass;
+},0)
+console.log(massReduce);
 //2. Get total height of all characters
+result()
+const heightReduce=characters.reduce((acc,curr)=>{
+    return acc+curr.height;
+},0)
+console.log(he);
 //3. Get total number of characters by eye color
 //4. Get total number of characters in all the character names
