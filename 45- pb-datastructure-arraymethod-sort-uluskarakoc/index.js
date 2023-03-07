@@ -15,12 +15,12 @@ console.log(arr.sort((a, b) => b - a));
 //2
 //We can use slice() to make a copy and run the sort on it:
 result();
+
+let array = ["HTML", "JavaScript", "CSS"];
+console.log(array);
 const copySorted = (arr) => {
  return arr.sort((a, b) => a.localeCompare(b));
 };
-let array = ["HTML", "JavaScript", "CSS"];
-
 let sorted = copySorted(array);
-
 console.log(sorted);
-console.log(array);
+
