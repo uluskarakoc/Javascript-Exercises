@@ -19,4 +19,7 @@ result();
 const arrayOfNumbers = [3, 45, 6, 56, 7, 9]; 
 const erhöhen=arrayOfNumbers.map((n)=> n+1)
 console.log(erhöhen)
-
+// #### 3. Evens filtern
+result()
+const gerade=[1,2,3,11,12,13].filter((n)=> n%2===0)
+console.log(gerade)
