@@ -90,4 +90,25 @@ const dictionary = (str, arr) => {
 console.log(dictionary("bu", ["button", "breakfast", "border"]));
 console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
 console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
+// **8. Even Number Generator.**
+result();
+const getEvenNums = (num) => {
+  let arr = [];
+  for (let i = 2; i <= num; i += 2) {
+    arr.push(i);
+  }
+  return arr;
+};
+console.log(getEvenNums(8))
+console.log(getEvenNums(4))
+console.log(getEvenNums(2))
+// **9: Alphabetische Reihenfolge**.
+result();
+const alphabetise=(str)=>{
+return str.split("").sort((a,b)=>a.localeCompare(b)).join("")
+}
+console.log(alphabetise("webdev"));
+
+
+
 
