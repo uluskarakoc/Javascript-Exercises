@@ -47,16 +47,39 @@ console.log(reverseNum(-34532));
 // **4. "AEIOU": Vowels.**
 result();
 const vowelCounter = (str) => {
-  const vowels = ["a", "e", "i", "o", "u"]
+  const vowels = ["a", "e", "i", "o", "u"];
   let count = 0;
   str.split("").forEach((n) => {
     if (vowels.includes(n)) {
       count++;
     }
   });
-console.log(count)
+  console.log(count);
 };
 vowelCounter("this is a string");
 vowelCounter("ulus karakoc");
 
-// console.log(("this is a string").split(""))
+// **5. Missing Number.**
+result();
+const findMissingNum = (arr) => {
+  let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  arr.forEach((n) => {
+    if (!number.includes(n)) {
+      return n;
+    }
+  });
+};
+console.log(findMissingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+// **6. Cubed.**
+result();
+const sumOfCubes = (arr) => {
+  return arr
+    .map((n) => Math.pow(n, 3))
+    .reduce((acc, curr) => {
+      return acc + curr;
+    }, 0);
+};
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));
+
