@@ -82,4 +82,12 @@ const sumOfCubes = (arr) => {
 console.log(sumOfCubes([1, 5, 9]));
 console.log(sumOfCubes([2]));
 console.log(sumOfCubes([]));
+// **7. Wörterbuch.**
+result();
+const dictionary = (str, arr) => {
+  return arr.filter((n) => n.startsWith(str));
+};
+console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"]));
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"]));
 
