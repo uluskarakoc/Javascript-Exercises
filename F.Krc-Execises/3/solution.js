@@ -19,3 +19,7 @@ const people = [
 // 1) Dizideki tüm insanların ortalama geliri nedir? (acc = accumulator = toplayıcı parametre)
 result()
 console.log(people.reduce((a,c)=>{return a+ parseInt(c.salary)},0))
+// 2) Şu anda 30 yaşından büyük kişiler kimlerdir?
+result()
+const age=people.filter((n)=>parseInt(n.DOB)<1990)
+console.log(age);

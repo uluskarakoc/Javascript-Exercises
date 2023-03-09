@@ -18,9 +18,11 @@ result();
 
 let array = ["HTML", "JavaScript", "CSS"];
 console.log(array);
+
 const copySorted = (arr) => {
  return arr.sort((a, b) => a.localeCompare(b));
 };
+
 let sorted = copySorted(array);
 console.log(sorted);
 
