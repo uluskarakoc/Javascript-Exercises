@@ -46,7 +46,7 @@ console.log(allHeights);
 //3. Get array of objects with just name and height properties
 result();
 const heightAndNames = characters.map((n) => {
-  return n.name + " " + n.height;
+  return [n.name + " " + n.height];
 });
 console.log(heightAndNames);
 //4. Get array of all first names
@@ -149,6 +149,10 @@ const eyeReduce = characters.reduce((a, c) => {
   return a;
 }, {});
 console.log(eyeReduce);
-
-
 //4. Get total number of characters in all the character names
+result();
+const namesReduce = characters.reduce((a, c) => {
+  a[c.name] ? a[c.name]++ : (a[c.name] = 1);
+  return a;
+}, {});
+console.log(namesReduce);
