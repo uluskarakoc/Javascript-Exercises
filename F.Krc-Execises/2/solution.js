@@ -141,8 +141,14 @@ const heightReduce = characters.reduce((acc, curr) => {
   return acc + curr.height;
 }, 0);
 console.log(heightReduce);
+
 //3. Get total number of characters by eye color
 result();
-const eyeReduce = characters.map((n) => n.eye_color).reduce((a,c)=>{return a + c}).split(" ")
+const eyeReduce = characters.reduce((a, c) => {
+  a[c.eye_color] ? a[c.eye_color]++ : (a[c.eye_color] = 1);
+  return a;
+}, {});
 console.log(eyeReduce);
+
+
 //4. Get total number of characters in all the character names
