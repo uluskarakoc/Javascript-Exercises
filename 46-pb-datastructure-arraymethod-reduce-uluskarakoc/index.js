@@ -7,9 +7,12 @@ let users = [
   {id: 'ann', name: "Ann Smith", age: 24},
   {id: 'pete', name: "Pete Peterson", age: 31},
 ];
+// console.log(users[0].id);
 
-function groupById(array) {
-  //write your code here
+
+function groupById(arr) {
+  return arr.reduce((a,c)=>{a[c.id]={...c}
+  return a}, {})
 }
 
 let usersById= groupById(users)
@@ -24,3 +27,8 @@ console.log(usersById)
 }
   
 */
+
+
+
+
+

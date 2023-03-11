@@ -108,7 +108,7 @@ function reducer(accumulator, currentValue, index) {
   );
   return returns;
 }
-const snc = array.reduce(reducer, 1);
+const snc = array.reduce(reducer);
 console.log(snc);
 
 // How reduce() works with an initial value
@@ -153,3 +153,16 @@ console.log(allbooks);
 //   'Romeo and Juliet', 'The Lord of the Rings',
 //   'The Shining'
 // ]
+result()
+let users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+function groupById(arr) {
+    return arr.reduce( (a, c) =>{ a[c.id] = {...c}; 
+     return a;
+    }, {} )
+}
+let usersById= groupById(users)
+console.log("usersById", usersById)
