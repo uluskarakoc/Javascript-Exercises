@@ -42,5 +42,10 @@ peopleOlderThan30 = people.filter(person => {
    const ulu=arr.map((n)=>{ return n.firstName +" "+n.lastName})
    return ulu;
  }
-
  console.log(nameUndNachname(people));
+// 4) Küçükten büyüğe doğru sıralanmış dizideki kişilerin bir listesini alın.
+result()
+people.sort((a, b) => new Date(b.DOB) - new Date(a.DOB))
+ console.log(people)
+// 5) Her bölümde kaç kişi var? 
+result()
