@@ -21,5 +21,18 @@ result()
 console.log(people.reduce((a,c)=>{return a+ parseInt(c.salary)},0))
 // 2) Şu anda 30 yaşından büyük kişiler kimlerdir?
 result()
-const age=people.filter((n)=>parseInt(n.DOB)<1990)
-console.log(age);
+bugun  = new Date()
+console.log(`Bugün----${bugun}`)
+buYil = bugun.getFullYear()
+console.log(buYil)
+
+dob = new Date('09/04/1985')
+console.log(dob.getFullYear())
+
+peopleOlderThan30 = people.filter(person => {
+  age = new Date().getFullYear() - new Date(person.DOB).getFullYear()
+   console.log(age)
+  return age > 30 
+})
+
+ console.log(peopleOlderThan30)

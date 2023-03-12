@@ -73,6 +73,7 @@ console.log(doubledPositiveNumbers); // [12, 4]
 
 // Flatten an array of arrays
 result();
+
 const flattened = [
   [0, 1],
   [2, 3],
@@ -145,7 +146,7 @@ const friends = [
 // additional list contained in initialValue
 const allbooks = friends.reduce(
   (accumulator, currentValue) => [...accumulator, ...currentValue.books],
-  ["Alphabet"],
+  ["Alphabet"]
 );
 console.log(allbooks);
 // [
@@ -153,16 +154,18 @@ console.log(allbooks);
 //   'Romeo and Juliet', 'The Lord of the Rings',
 //   'The Shining'
 // ]
-result()
+result();
 let users = [
-  {id: 'john', name: "John Smith", age: 20},
-  {id: 'ann', name: "Ann Smith", age: 24},
-  {id: 'pete', name: "Pete Peterson", age: 31},
+  [0, 1],
+  [2, 3],
+  [4, 5],
 ];
-function groupById(arr) {
-    return arr.reduce( (a, c) =>{ a[c.id] = {...c}; 
-     return a;
-    }, {} )
+
+function groupById(array) {
+ let sum = 0;
+  array.forEach((n) => {
+    sum += n.reduce((a, c) => a + c);
+  });
+  return sum
 }
-let usersById= groupById(users)
-console.log("usersById", usersById)
+console.log(groupById(users));
