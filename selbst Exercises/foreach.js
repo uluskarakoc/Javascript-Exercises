@@ -1,5 +1,5 @@
 let i=1;
-const result=()=>{console.log(`Result🍇🍇🍇🍇🍇🍇🍇 ${i++}`)}
+const result=()=>{console.log(`Result-------------- ${i++}`)}
 // Using forEach() on sparse arrays
 result()
 const arraySparse = [1, 3, /* empty */, 7];
@@ -58,15 +58,15 @@ words.forEach((word) => {
   }
 }); // one // two // four
 
-console.log(words); // ['two', 'three', 'four']
+console.log(`--------${words}`); // ['two', 'three', 'four']
 
 
 result()
 let nums=[42,32,56,26,45]
-nums.forEach((a,b,c,d)=>{console.log(a,b,c,d)})
+nums.forEach((a,b,c,)=>{console.log(a,b,c,)})
 
 
-forEach((element) => { /* … */ })
-forEach((element, index) => { /* … */ })
-forEach((element, index, array) => { /* … */ })
+// forEach((element) => { /* … */ })
+// forEach((element, index) => { /* … */ })
+// forEach((element, index, array) => { /* … */ })
   

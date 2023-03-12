@@ -1,5 +1,5 @@
 let i=1;
-const result=()=>{console.log(`Result🥊🥊🥊🥊🥊🥊${i++}`)}
+const result=()=>{console.log(`Result-----------${i++}`)}
 
 result()
 const inventory = [
@@ -23,7 +23,7 @@ const inventory = [
   
   const result1 = inventory1.find(({ name }) => name === "cherries");
   
-  console.log(result); // { name: 'cherries', quantity: 5 }
+  console.log(result1); // { name: 'cherries', quantity: 5 }
   result()
   const arrayLike = {
     length: 3,

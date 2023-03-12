@@ -163,9 +163,12 @@ let users = [
 
 function groupById(array) {
  let sum = 0;
+// let arr=[]
   array.forEach((n) => {
-    sum += n.reduce((a, c) => a + c);
+    sum+=n.reduce((a, c) => a + c)
+  //  arr.push(n.reduce((a, c) => a + c));
   });
-  return sum
+  // return arr
+    return sum
 }
 console.log(groupById(users));
