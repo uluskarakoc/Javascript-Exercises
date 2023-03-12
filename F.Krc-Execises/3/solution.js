@@ -31,8 +31,16 @@ console.log(dob.getFullYear())
 
 peopleOlderThan30 = people.filter(person => {
   age = new Date().getFullYear() - new Date(person.DOB).getFullYear()
-   console.log(age)
+  //  console.log(age)
   return age > 30 
 })
 
  console.log(peopleOlderThan30)
+ // 3) Kişilerin tam adının bir listesini alın (ad ve soyadı).
+ result()
+ const nameUndNachname=(arr)=>{
+   const ulu=arr.map((n)=>{ return n.firstName +" "+n.lastName})
+   return ulu;
+ }
+
+ console.log(nameUndNachname(people));
