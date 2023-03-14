@@ -17,8 +17,8 @@ const squareNumber = (num) => {
 
 const array = [1, 2, 3, 4, 5];
 
-const square = (arr, squareNumber) => {
-  return arr.map(squareNumber);
+const square = (arr, callback) => {
+  return arr.map(callback);
 };
 
 console.log(square(array, squareNumber));
