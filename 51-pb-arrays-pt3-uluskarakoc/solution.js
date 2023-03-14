@@ -83,11 +83,46 @@ const wordRank = (str) => {
   console.log(longestLength);
 };
 
- wordRank("The quick brown fox.");
- wordRank("Nancy is very pretty.");
+wordRank("The quick brown fox.");
+wordRank("Nancy is very pretty.");
 wordRank("Check back tomorrow, man!");
- wordRank("Today is Wednesday.");
+wordRank("Today is Wednesday.");
+// **6. c4n y0u r34d th15?**
+result();
+// const code = (str) => {
+//   let arr = str.split("");
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] === 4) {
+//       arr[i] === "a";
+//     } else if (arr[i] === 3) {
+//       arr[i] === "e";
+//     } else if (arr[i] === 1) {
+//       arr[i] === "i";
+//     } else if (arr[i] === 0) {
+//       arr[i] === "o";
+//       console.log(arr);
+//     }
+//   }
+// };
+// code("javascript is cool");
+// code("programming is fun");
+// code("become a coder");
 
+function code(str) {
+  const lowerStr = str.toLowerCase();
+  const letters = lowerStr.split('');
 
-// let deneme="Today is Wednesday."
-// console.log((deneme.split(" "))[1]);
+  const hackerLetters = ['a', 'e', 'i', 'o', 's'];
+  const replacements = ['4', '3', '1', '0', '5'];
+
+  for (let i = 0; i < letters.length; i++) {
+    const index = hackerLetters.indexOf(letters[i]);
+    if (index !== -1) {
+      letters[i] = replacements[index];
+    }
+  }
+
+  return letters.join('');
+}
+
+console.log(code('do you even code, sis')); // d0 y0u 3v3n c0d3, 515
