@@ -121,7 +121,6 @@ function code(str) {
       letters[i] = replacements[index];
     }
   }
-
   return letters.join('');
 }
 
