@@ -53,7 +53,7 @@ console.log(tracksuit.toText());
 console.log(tracksuit.containedVAT());
 // Create cart
 const cart = new Cart()
-// Test cart
+//   ## 3. Test your cart with products
 result();
 console.log(cart.addProduct({ name: 'painting brush', price: 20 })) // Fails; not a product!
 console.log(cart.addProduct(shoes))
@@ -63,4 +63,3 @@ cart.getProductInfoCart()
 console.log(cart.addProduct("potato"))
 
 
-//   ## 3. Test your cart with products
