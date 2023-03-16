@@ -18,7 +18,7 @@ Der Konstruktor sollte 2 Parameter haben, die diese Eigenschaften initialisieren
 ```js
 const tracksuit = new Product("Adidas tracksuit", 150.0)
 const shoes = new Product("Puma running shoes", 85.99)
-const socks = new Product("Socks set", 4,99)
+const socks = new Product("Socks set", 4.99)
 ```
 
 Die Klasse sollte außerdem 2 Methoden haben
