@@ -34,7 +34,7 @@ const getMonthName = (num) => {
   if (num <= 12 && num >= 1) {
     console.log(months[num - 1]);
   } else {
-    console.log(`Artislik Yapma`);
+    console.log(`Böyle bir ay yok`);
   }
 };
 getMonthName(3);

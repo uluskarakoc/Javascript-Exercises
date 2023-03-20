@@ -19,3 +19,11 @@ console.log(copySortedDesc(array)); //[ 'JavaScript', 'HTML', 'CSS' ]
 // oder du verwendest `localeCompare` (siehe wissen)
 
 //  let sortedArray = copySorted(wordsArray); 
+const fn= ()=>{}
+console.log(typeof fn);
+
+const animal={
+    type:"cat",
+    name:"kara"
+}
+console.log(animal.age);
