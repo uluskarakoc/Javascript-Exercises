@@ -9,13 +9,14 @@ const profileData = {
   lastName: "Has",
   age: 40,
   city: "Moskova",
-  details: function () {
-    return `${this.firstName} ${this.lastName} is ${this.age}years old and lives in ${this.city}`;
-  },
 };
 // ## Aufgabe 2 - Objektmethode
 result();
+profileData.details = () => {
+  return `${profileData.firstName} ${profileData.lastName} is ${profileData.age} years old and lives in ${profileData.city}`;
+};
 console.log(profileData.details());
+
 // ## Aufgabe 3 - Wortkonverter
 result();
 let adjectives = ["smart", "kind", "sweet", "small", "clear"];
@@ -35,10 +36,31 @@ const hourTracking = [
   { day: "Friday", start: 6, end: 12 },
 ];
 const calculateHours = (hours) => {
-    let sum=0;
-   hours.forEach((n) => {
-    sum+=(n.end-n.start);
+  let sum = 0;
+  hours.forEach((n) => {
+    sum += n.end - n.start;
   });
   return sum;
 };
 console.log(calculateHours(hourTracking));
+// ## Aufgabe 5 - Klassen
+result();
+class Course {
+  constructor(teacher, type, number) {
+    this.teacher = teacher;
+    this.type = type;
+    this.number = number;
+  }
+  spaceNeeded() {
+    console.log(`We need ${2 * this.number} quadratmeter area for a class`);
+  }
+  details() {
+    console.log(
+      `This is a ${this.type} course taught by ${this.teacher}. There are ${this.number} students taking the course.`
+    );
+  }
+}
+const kurs = new Course("Mosh", "web development", 15);
+kurs.spaceNeeded();
+kurs.details();
+// ## Task 6 - Input validation

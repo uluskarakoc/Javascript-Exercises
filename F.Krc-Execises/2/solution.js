@@ -156,3 +156,21 @@ const namesReduce = characters.reduce((a, c) => {
   return a;
 }, {});
 console.log(namesReduce);
+
+
+const programming = {
+  languages: ["JavaScript", "Python", "Ruby"],
+  isChallenging: true,
+  isRewarding: true,
+  difficulty: 8,
+  jokes:
+      "https://www.quora.com/What-are-the-most-popular-computer-programming-jokes",
+};
+
+
+details.worthwhile = () => {
+  
+      return `Learning the programming languages: is rewarding and challenging.`
+  
+};
+console.log(programming.details());
