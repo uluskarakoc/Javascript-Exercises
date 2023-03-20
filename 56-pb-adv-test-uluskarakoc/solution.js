@@ -8,5 +8,14 @@ const profileData={
     firstName:"Kerim",
     lastName:"Has",
     age:40,
-    city:"Moskova"
+    city:"Moskova",
+    details: function (){
+        return `${this.firstName} ${this.lastName} is ${this.age}years old and lives in ${this.city}`
+    }
+
 }
+// ## Aufgabe 2 - Objektmethode
+result();
+console.log(profileData.details());
+
+// console.log(profileData);
