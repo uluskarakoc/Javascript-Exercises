@@ -29,8 +29,8 @@
 // console.log("HALLO WELT!!!!!!")
 // window.alert("lernen lernen lernen")
 
-// const x = prompt("setze x");
-//  console.log("ich habe x gesetzt als: ", x);
+const x = prompt("setze x");
+ console.log("ich habe x gesetzt als: ", x);
 
 // Schreibe ein Programm was so lange prompts ausgibt bis der User endlich "hallo welt" eingibt.
 // let done = false;
