@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aufgabenliste</h1>
+    <input id="task-input" type="text" placeholder="Aufgabe eingeben">
+    <button id="add-task">Aufgabe hinzufügen</button>
+    <ul id="task-list"></ul>
+
+    <script>
+        const addTaskButton = document.getElementById('add-task');
+        const taskInput = document.getElementById('task-input');
+        const taskList = document.getElementById('task-list');
+
+        // 1. Füge dem "Aufgabe hinzufügen"-Button einen Event-Listener hinzu.
+        // Wenn der Button geklickt wird, wird die eingegebene Aufgabe zur Liste hinzugefügt und das Eingabefeld geleert werden. 
+        addTaskButton.addEventListener('click', function () {
+           
+        });
+
+        // Setze die Event-Delegation um, um Aufgaben als abgeschlossen zu markieren.
+        // Füg einen Event-Listener zur Aufgabenliste hinzu, der prüft, ob ein Listenelement geklickt wurde. Falls ja, soll das Element mit der CSS-Klasse "completed" umgeschaltet werden, um die Aufgabe als abgeschlossen zu markieren.
+        taskList.addEventListener('click', function (event) {
+            const clickedItem = event.target;
+            if (clickedItem.tagName === 'LI') {
+                clickedItem.classList.toggle('completed');
+            }
+        });
+    </script>
+</body>
+
+</html>
