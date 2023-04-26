@@ -1,4 +1,4 @@
-// Your code h// Your code here
+// Fatihs Code
 const apiUrl = "https://jsonplaceholder.typicode.com/posts";
 
 const form = document.getElementById("submit-form");
