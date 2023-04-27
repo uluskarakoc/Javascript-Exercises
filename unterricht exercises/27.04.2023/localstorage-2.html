@@ -10,9 +10,9 @@
   <script>
     function saveName() {
       const name = document.getElementById("name").value;
-      let names = JSON.parse(localStorage.getItem("userNames")) || [];
+      let names = JSON.parse(localStorage.getItem("userNames")) || []; // Suradaki array neden var.?
 
-      if (name && !names.includes(name)) {
+      if (name && !names.includes(name)) { // Bastaki nameyi silsek ne degisir.
         names.push(name);
         localStorage.setItem("userNames", JSON.stringify(names));
         displayNames();
@@ -28,7 +28,7 @@
       document.getElementById("namesList").innerHTML = namesList;
     }
 
-    function removeName(name) {
+    function removeName(name) { // Bu code blogu bir daha dinlenilmeli tam anlayamadim.
       let names = JSON.parse(localStorage.getItem("userNames")) || [];
       names = names.filter((item) => item !== name);
       localStorage.setItem("userNames", JSON.stringify(names));
