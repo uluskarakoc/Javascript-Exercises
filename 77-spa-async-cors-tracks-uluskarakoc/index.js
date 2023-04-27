@@ -33,7 +33,7 @@ const renderTracks = (tracks) => {
      ${track.name}</a>
      </li>
     `;
-    trackList.insertAdjacentHTML("beforeend", trackListElement);
+    trackList.insertAdjacentHTML("afterend", trackListElement);
   });
 };
 
