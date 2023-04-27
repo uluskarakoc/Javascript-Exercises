@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+    <script>
+      function saveName() {
+        const name = document.querySelector("#name").value;
+        localStorage.setItem("username", name);
+        document.querySelector("#name").value = "";  // Burasi her ismi girdiginde formular feld kismini tekrar bos birakiyor ki bir aha silmekle ugrasilmasin isim yazilsin.
+      }
+
+      function displayName() {
+        const savedName = localStorage.getItem("userName");
+        const greetingEl = document.querySelector(".greeting");
+        if (savedName) {
+          greetingEl.textContent = `Hallo ${savedName}!`;
+        } else {
+          greetingEl.textContent = "Kein Name gespeichert.";
+        }
+      }
+
+      function clearName() {
+        localStorage.removeItem("userName");
+        document.querySelector(".greeting").textContent = "tamam sildik sildik";
+        
+      }
+    </script>
+  </head>
+  <body>
+    <h1>LocalStorage Demo</h1>
+    <p>Gib deinen Namen ein:</p>
+    <input type="text" id="name" />
+    <button onclick="saveName()">Namen speichern</button>
+    <button onclick="displayName()">Namen anzeigen</button>
+    <button onclick="clearName()">Namen löschen</button>
+    <p class="greeting"></p>
+  </body>
+</html>

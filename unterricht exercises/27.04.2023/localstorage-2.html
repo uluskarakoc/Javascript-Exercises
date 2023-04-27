@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage JSON Demo</title>
+  </head>
+
+  <script>
+    function saveName() {
+      const name = document.getElementById("name").value;
+      let names = JSON.parse(localStorage.getItem("userNames")) || [];
+
+      if (name && !names.includes(name)) {
+        names.push(name);
+        localStorage.setItem("userNames", JSON.stringify(names));
+        displayNames();
+      }
+      document.getElementById("name").value = "";
+    }
+    function displayNames() {
+      const names = JSON.parse(localStorage.getItem("userNames")) || [];
+      let namesList = "";
+      names.forEach((name) => {
+        namesList += `<li>${name} <button onclick="removeName('${name}')">Remove</button></li>`;
+      });
+      document.getElementById("namesList").innerHTML = namesList;
+    }
+
+    function removeName(name) {
+      let names = JSON.parse(localStorage.getItem("userNames")) || [];
+      names = names.filter((item) => item !== name);
+      localStorage.setItem("userNames", JSON.stringify(names));
+      displayNames();
+    }
+    window.addEventListener("load", displayNames);
+  </script>
+
+  <body>
+    <h1>LocalStorage JSON: Objekte und Arrays speichern</h1>
+    <p>
+      Info: Im LocalStorage können nur Strings gespeichert werden. Daher kann
+      man sich mit JSON arbeiten, um z.B. Objekte oder Arrays zu speichern.
+    </p>
+
+    <p>Geben Sie einen Namen ein:</p>
+    <input type="text" id="name" />
+
+    <button onclick="saveName()">Namen speichern</button>
+
+    <h2>Namensliste:</h2>
+    <ul id="namesList"></ul>
+  </body>
+</html>
