@@ -12,13 +12,14 @@
       const name = document.getElementById("name").value;
       let names = JSON.parse(localStorage.getItem("userNames")) || []; // Suradaki array neden var.?
 
-      if (name && !names.includes(name)) { // Bastaki nameyi silsek ne degisir.
+      if (name && !names.includes(name)) { // Bastaki nameyi silsek ne degisir. el cevap inputu bos birakir false dönüyor yazarsak true degeri veriyor.
         names.push(name);
         localStorage.setItem("userNames", JSON.stringify(names));
         displayNames();
       }
       document.getElementById("name").value = "";
     }
+
     function displayNames() {
       const names = JSON.parse(localStorage.getItem("userNames")) || [];
       let namesList = "";
@@ -28,12 +29,14 @@
       document.getElementById("namesList").innerHTML = namesList;
     }
 
-    function removeName(name) { // Bu code blogu bir daha dinlenilmeli tam anlayamadim.
+
+    function removeName(name) { // Bu code blogu bir daha dinlenilmeli tam anlayamadim. // sordum anladim. biraz farkli sekilde silmek
       let names = JSON.parse(localStorage.getItem("userNames")) || [];
       names = names.filter((item) => item !== name);
       localStorage.setItem("userNames", JSON.stringify(names));
       displayNames();
     }
+
     window.addEventListener("load", displayNames);
   </script>
 
