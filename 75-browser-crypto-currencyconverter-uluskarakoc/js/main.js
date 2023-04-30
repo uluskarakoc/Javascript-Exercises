@@ -15,7 +15,7 @@ const convertCurrency = async () => {
   output.value = (jsonData.data.amount * input.value).toFixed(2);
 };
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => { /// Bütün forma neden event ekledik??
   e.preventDefault();
   convertCurrency();
 });
