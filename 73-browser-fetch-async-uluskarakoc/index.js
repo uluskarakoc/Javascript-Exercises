@@ -1,21 +1,69 @@
-const modal = document.getElementById("myModal");
-let promiseOfModal = new Promise(function (resolve) {
+// const modal = document.getElementById("myModal");
+// let promiseOfModal = new Promise(function (resolve) {
+//     window.setTimeout(function () {
+//         resolve(modal)
+//     }, (1000 * 5));
+// });
+
+// promiseOfModal.then(function(val) {
+//     console.log("User has been on the page for 5 seconds");
+//     val.style.display = "block";
+// })
+
+// modal.addEventListener("click", (e) => {
+//     switch(e.target.className) {
+//         case "close":
+//         case "modal":
+//         modal.style.display = "none"
+//         break;
+//     }
+// })
+
+const modal = document.getElementById('myModal');
+
+//show modal after 5 seconds
+function showModal() {
+  return new Promise(function (resolve) {
     window.setTimeout(function () {
-        resolve(modal)
-    }, (1000 * 5));
+      resolve(modal);
+    }, 1000 * 5);
+  });
+}
+
+async function getModal() {
+  let result = await showModal();
+  result.style.display = 'block';
+}
+
+getModal();
+
+//close modal
+modal.addEventListener('click', (e) => {
+  switch (e.target.className) {
+    case 'close':
+    case 'modal':
+      modal.style.display = 'none';
+      break;
+  }
 });
 
-promiseOfModal.then(function(val) {
-    console.log("User has been on the page for 5 seconds");
-    val.style.display = "block";
-})
+// animation end
+const continueButton = document.getElementById('continue');
 
-modal.addEventListener("click", (e) => {
-    switch(e.target.className) {
-        case "close":
-        case "modal":
-        modal.style.display = "none"
-        break;
-    }
-})
+continueButton.addEventListener('mouseover', () => {
+  onAnimationComplete();
+});
 
+async function onAnimationComplete() {
+  const buttonAnimationEnd = await onAnimationStart(continueButton);
+  buttonAnimationEnd.classList.add('btn-info');
+  alert('Continue to subscription!');
+}
+
+function onAnimationStart(elem) {
+  return new Promise((resolve) => {
+    elem.addEventListener('animationend', () => {
+      resolve(elem);
+    });
+  });
+}
