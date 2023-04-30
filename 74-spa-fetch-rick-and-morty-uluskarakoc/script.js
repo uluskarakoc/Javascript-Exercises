@@ -39,7 +39,7 @@ rickAndMortyCharacters();
 const getCharacterByName = async (name) => {
     const data = await fetch(`https://rickandmortyapi.com/api/character/?name=${name}`);
     const character = await data.json();
-    console.log(character);
+    console.log(character);     // bu code blogu neden burada?
 }
 
 getCharacterByName("rick");
