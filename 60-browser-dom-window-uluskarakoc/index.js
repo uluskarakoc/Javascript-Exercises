@@ -13,7 +13,7 @@ const guessingGame = () => {
       alert("Sorry, you failed to guess the number in three attempts.");
       return;
     } else {
-      alert(`Wrong That was  ${i}.  try`)
+      alert(`Wrong That was  ${i}.  try`);
     }
   }
 };

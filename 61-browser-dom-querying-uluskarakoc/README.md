@@ -8,11 +8,11 @@ In the repository, there is an `index.html` starting file which has the skeleton
 * The page should be responsive.
 
 **Instructions**: 
-* Change the font of the body element. 
+<!-- * Change the font of the body element. 
 * Center the text of h1 on the page.
-* The menu headings have the class `.category`. Select the elements by class name. Then, change the `color` and `font-style` of each element. 
-* Create a function named `colorGenerator` that returns a random color. The returned color should also include transparency.
-* Select the unordered lists with the class `.food-category`. Give each list a different background color using the function that you created. 
+* The menu headings have the class `.category`. Select the elements by class name. Then, change the `color` and `font-style` of each element.  -->
+<!-- * Create a function named `colorGenerator` that returns a random color. The returned color should also include transparency. -->
+<!-- * Select the unordered lists with the class `.food-category`. Give each list a different background color using the function that you created.  -->
 * Align the `.food-category` lists in a row on desktop. Make sure that the page is responsive and also works on mobile.
 * Select the warning at the end of the page by its id `#warning`. Select the id without using `querySelector`. Change the size and font of `.warning`.
 * Select all _even_ `.allergy-info` items. Give the even items a different background color.
