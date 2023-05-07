@@ -13,10 +13,10 @@ In the repository, there is an `index.html` starting file which has the skeleton
 * The menu headings have the class `.category`. Select the elements by class name. Then, change the `color` and `font-style` of each element.  -->
 <!-- * Create a function named `colorGenerator` that returns a random color. The returned color should also include transparency. -->
 <!-- * Select the unordered lists with the class `.food-category`. Give each list a different background color using the function that you created.  -->
-* Align the `.food-category` lists in a row on desktop. Make sure that the page is responsive and also works on mobile.
-* Select the warning at the end of the page by its id `#warning`. Select the id without using `querySelector`. Change the size and font of `.warning`.
-* Select all _even_ `.allergy-info` items. Give the even items a different background color.
-* Make `.allergy-warning` appear as a column at the center of the page.
+<!-- * Align the `.food-category` lists in a row on desktop. Make sure that the page is responsive and also works on mobile. -->
+<!-- * Select the warning at the end of the page by its id `#warning`. Select the id without using `querySelector`. Change the size and font of `.warning`. -->
+<!-- * Select all _even_ `.allergy-info` items. Give the even items a different background color. -->
+<!-- * Make `.allergy-warning` appear as a column at the center of the page. -->
 * The descriptions in the footer should also be styled, e.g. a rounded border with a background color. They should appear in a column for mobile and in a row for desktop.
 
 **Images**:
