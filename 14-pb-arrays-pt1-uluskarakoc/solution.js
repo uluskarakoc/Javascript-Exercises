@@ -1,5 +1,10 @@
 // 1. Deklariere eine Variable namens `euroCities` und weise ihr ein Array mit 5 europäischen Städten zu, z.B. `["Paris", "London", "Valletta", "Prag", "Rom"]`. Deklariere eine weitere Variable mit dem Namen `secondCity` und weise ihr das zweite Element des Arrays als Wert zu.
 const euroCities =["Paris", "London", "Buchholz", "Prag", "Rom"]
+const metin = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+
+const harfDizisi = metin.split('');
+
+console.log(harfDizisi.length);
 console.log(euroCities)
 // 2. Ändere den ersten Eintrag im Array zu "Berlin".
 const berlin =euroCities.splice(0,1,"Berlin")
