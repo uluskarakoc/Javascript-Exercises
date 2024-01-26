@@ -33,15 +33,30 @@ console.log(niceShoesStr.includes("n"));
 // 6. Erstelle eine Variable namens `oldStr` und weise ihr ein Wort deiner Wahl als Wert zu. Erstelle eine weitere Variable mit dem Namen `newStr` und weise ihr als Wert den Wert von `oldStr` zu, wobei das erste Zeichen der Zeichenkette vorne und hinten hinzugefügt wird, z.B.: Bananen => BBananenB
 result();
 const oldStr = "Buchholz";
-const newStr = oldStr.substring(0,1) + oldStr + oldStr.substring(0,1) ;
+const newStr = oldStr.substring(0, 1) + oldStr + oldStr.substring(0, 1);
 console.log(newStr);
 // 7. Erstelle eine Variable mit dem Namen `scritcherStr` und weise ihr ein Wort deiner Wahl mit mindestens 3 Zeichen als Wert zu. Erstelle eine weitere Variable mit dem Namen `lastThreeChars` und benutze eine String-Methode, um die letzten 3 Zeichen von `scritcherStr` zu erhalten und sie als Wert der neuen Variable zuzuweisen. Füge den Wert von `lastThreeChars` an den Anfang **und** das Ende von `scritcherStr` hinzu und gib das Ergebnis auf der Konsole aus, erwartete Ausgabe: Scritch => tchScritchtch
-
+result();
+const scritcherStr = "Holm";
+const lastThreeChars = scritcherStr.substring(scritcherStr.length - 3);
+console.log(lastThreeChars);
 // 8. Erstelle eine Variable namens `boogieNightsStr` und weise ihr ein Wort deiner Wahl mit mindestens 2 Zeichen als Wert zu. Tausche die Stellen des ersten und letzten Buchstabens und gib das Ergebnis auf der Konsole aus, erwartete Ausgabe: BoogieWoogie => eoogieWoogiB
-// let boogieNightsStr ="bremer";
-// let b = boogieNightsStr.replace(("b","r"),("r","b"));
-// console.log(b)
-
+result();
+const boogieNightsStr = "Hamburg";
+const neuWord =
+  boogieNightsStr.charAt(boogieNightsStr.length - 1) +
+  boogieNightsStr.substring(1, boogieNightsStr.length - 1) +
+  boogieNightsStr.charAt(0);
+console.log(neuWord);
 // 9. Erstelle 3 Variablen mit den Namen `firstName`, `city` und `job` und weise ihnen String-Werte zu, d.h. `const firstName = "Maria"; const city = "Berlin", usw. Gib mit Hilfe der Variablen und der String-Interpolation einen Satz auf der Konsole aus, z. B.: "Mein Name ist Maria. Ich wohne in Berlin und bin Lehrerin".
-
+result();
+const firstName = "Ulus";
+const city = "Hamburg";
+const job = "Web Developer";
+console.log(`Mein name ist ${firstName}. ich wohne in ${city} und bin ${job}.`);
 // 10. Deklariere eine Variable namens `foxStr` und weise ihr den Wert "the quick brown fox" zu (alles in Kleinbuchstaben). Schreibe den ersten Buchstaben der Zeichenkette groß. Gib das Ergebnis auf der Konsole aus.
+result();
+const foxStr = "the quick brown fox"
+const eB= foxStr.charAt(0).toUpperCase()
+const satz = eB + foxStr.substring(1)
+console.log(satz);
