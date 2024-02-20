@@ -1,4 +1,4 @@
-  // 1. -----------------
+// 1. -----------------
 let i = 1;
 let printHeading = () => console.log("Exercise " + i++);
 
@@ -58,6 +58,8 @@ console.log(multiStr(3, "Woah"));
 // console.log(result);
 
 printHeading();
+
+
 const largestNumInArray = (x) => {
   let max = null; // yeah this does not work if all the inputs are <0
   for (let i = 0; i < x.length; i++) {
@@ -138,7 +140,6 @@ console.log(isString(Number.EPSILON));
 
 // console.log(areStrings("ulus", "karakoc"));
 
-
 printHeading();
 const areStrings = (a, b) => typeof a === typeof b && typeof b === typeof "";
 console.log(areStrings("Cat"));
@@ -177,7 +178,6 @@ console.log(wordRepeater("bunny"));
 console.log(wordRepeater("Cat food"));
 console.log(wordRepeater("I am groot"));
 console.log(wordRepeater("O M G ?"));
-
 
 // 11.-----------------------
 // printHeading();
@@ -271,7 +271,3 @@ console.log(bar("Foobar"));
 console.log(bar("Potato"));
 console.log(bar("Tomato"));
 console.log(bar("International Space Station"));
-
-
-
-
