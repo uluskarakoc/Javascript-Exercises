@@ -108,13 +108,24 @@ const wordRepeater = (str) => {
   }
   return again.join(" ");
 };
-console.log(wordRepeater("bunny"));
-console.log(wordRepeater("Cat food"));
-console.log(wordRepeater("I am groot"));
-console.log(wordRepeater("O M G ?"));
-
+// console.log(wordRepeater("bunny"));
+// console.log(wordRepeater("Cat food"));
+// console.log(wordRepeater("I am groot"));
+// console.log(wordRepeater("O M G ?"));
 // 11.-----------------------
+const firstLetters = (str) => {
+  let newWord = "";
+  const arr = str.split(" ");
+  for (let i = 0; i < arr.length; i++) {
+    newWord += arr[i][0];
+  }
+  console.log(newWord);
+};
 
+firstLetters("cat");
+firstLetters("What the fruit");
+firstLetters("MongoDB Express Node React");
+firstLetters("What You See Is What You Get");
 // 12.---------------------
 
 // 13. -------------------
