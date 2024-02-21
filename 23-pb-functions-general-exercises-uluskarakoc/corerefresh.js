@@ -113,6 +113,12 @@ const wordRepeater = (str) => {
 // console.log(wordRepeater("I am groot"));
 // console.log(wordRepeater("O M G ?"));
 // 11.-----------------------
+const firstLetter = (str) => {
+  console.log(str.split("")[0]);
+};
+// firstLetter("cat");
+// firstLetter("quylthulg");
+// 12.---------------------
 const firstLetters = (str) => {
   let newWord = "";
   const arr = str.split(" ");
@@ -121,16 +127,38 @@ const firstLetters = (str) => {
   }
   console.log(newWord);
 };
-
-firstLetters("cat");
-firstLetters("What the fruit");
-firstLetters("MongoDB Express Node React");
-firstLetters("What You See Is What You Get");
-// 12.---------------------
-
+// firstLetters("cat");
+// firstLetters("What the fruit");
+// firstLetters("MongoDB Express Node React");
+// firstLetters("What You See Is What You Get");
 // 13. -------------------
+const len = (x) => {
+  if (typeof x === "string") {
+    console.log(x.length);
+    console.log("string");
+  } else if (Array.isArray(x)) {
+    console.log(x.length);
+    console.log("array");
+  } else {
+    console.log(null);
+  }
+};
+// len("acaacea");
+// len([47, "alo", 2, "maria"]);
 
 // 14.-------------------
+const explode = (x) => {
+  if (typeof x != "string") {
+    return null;
+  } else if (typeof x === "string") {
+    return x.split("");
+  }
+};
+console.log(explode("Cat"));
+console.log(explode(41));
+console.log(explode(""));
+console.log(explode("R & D"));
+
 // soruuuuuuuuuuuuu burada neden typeof x === "string" yerine x.split li bisey yazdik ve x.split ne demek
 
 // 15.---------------
