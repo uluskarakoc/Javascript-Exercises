@@ -193,5 +193,5 @@ console.log(isPrime(6));
 console.log(isPrime(7));
 console.log(isPrime(13));
 console.log(isPrime(14));
-
+// Bu cözüm yanlis. Dogrusu coderefresh'te.
 
