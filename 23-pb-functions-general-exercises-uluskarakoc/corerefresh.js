@@ -181,10 +181,10 @@ const bar = (str) => {
   catArr[1] = "t";
   console.log(catArr.join(""));
 };
-bar("");
-bar("x");
-bar("Cat");
-bar("Foobar");
-bar("Potato");
-bar("Tomato");
-bar("International Space Station");
+// bar("");
+// bar("x");
+// bar("Cat");
+// bar("Foobar");
+// bar("Potato");
+// bar("Tomato");
+// bar("International Space Station");
