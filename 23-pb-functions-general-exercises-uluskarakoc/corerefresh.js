@@ -175,4 +175,16 @@ const foo = (str) => {
 // foo("Blanket");
 // foo("1");
 // 16----------------------
-const bar = () => {};
+const bar = (str) => {
+  const catArr = str.split("");
+  catArr[0] = "Ca";
+  catArr[1] = "t";
+  console.log(catArr.join(""));
+};
+bar("");
+bar("x");
+bar("Cat");
+bar("Foobar");
+bar("Potato");
+bar("Tomato");
+bar("International Space Station");
