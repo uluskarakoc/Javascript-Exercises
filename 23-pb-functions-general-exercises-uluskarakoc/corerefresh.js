@@ -145,7 +145,6 @@ const len = (x) => {
 };
 // len("acaacea");
 // len([47, "alo", 2, "maria"]);
-
 // 14.-------------------
 const explode = (x) => {
   if (typeof x != "string") {
@@ -154,13 +153,26 @@ const explode = (x) => {
     return x.split("");
   }
 };
-console.log(explode("Cat"));
-console.log(explode(41));
-console.log(explode(""));
-console.log(explode("R & D"));
-
-// soruuuuuuuuuuuuu burada neden typeof x === "string" yerine x.split li bisey yazdik ve x.split ne demek
-
+// console.log(explode("Cat"));
+// console.log(explode(41));
+// console.log(explode(""));
+// console.log(explode("R & D"));
 // 15.---------------
-
+const foo = (str) => {
+  const arrFoo = str.split("");
+  if (arrFoo.includes("o")) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+// foo("");
+// foo("a");
+// foo("o");
+// foo("Cat");
+// foo("Tomato");
+// foo("Potato");
+// foo("Blanket");
+// foo("1");
 // 16----------------------
+const bar = () => {};
